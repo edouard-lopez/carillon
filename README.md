@@ -14,13 +14,13 @@ Starting point forked from [Slash](https://github.com/tommy351/Octopress-Theme-S
 
 Assuming you have installed the default theme, type the code below in terminal.
 
-    $ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
-    $ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
-    $ rake "install[greyshade]"
-    $ rake generate
+    export OCTOPRESS_THEME='carillon'
+    git clone git@github.com:edouard-lopez/"$OCTOPRESS_THEME".git
+    rake install["$OCTOPRESS_THEME"]
+    rake generate
 
 For profile picture and description, just add the relevant details in `_config.yml`
-  
+
 ##License
 
 [The MIT License (MIT)](http://opensource.org/licenses/MIT)
