@@ -1,4 +1,4 @@
-article{
+article {
 	border-bottom: 1px solid $color-gray04;
 	border-top: 1px solid $color-gray05;
 	padding: 30px 0;
@@ -9,28 +9,28 @@ article{
 	@media screen and (max-width: 600px){
 		padding: 15px 0;
 	}
-	h1.title{
+	h1.title {
 		font-weight: 300;
 		line-height: 35px;
 		margin-bottom: 20px;
-		a{
+		a {
 			color: $color-gray01;
 		}
 	}
-	.entry-content{
-		line-height: 2;
-		text-align: justify;
-		a{
-			&:hover{
-				text-decoration: underline;
-			}
+	.entry-content {
+		line-height: $lineHeight-default;
+		a {
+		  &:hover {
+		    color: $carillon;
+		    border-bottom: 1px solid $color-gray04;
+		  }
 		}
-		.more-link{
+		.more-link {
 			display: block;
 			margin-top: 16px;
 			padding-left: 30px;
 			position: relative;
-			&:before{
+			&:before {
 				content: "\f061";
 				font: 1.3em $font-icon;
 				line-height: 1.6em;
@@ -38,29 +38,29 @@ article{
 				left: 0;
 			}
 		}
-		p, blockquote, ul, ol, dl, table, iframe, h1, h2, h3, h4, h5, h6, .video-container{
+		p, blockquote, ul, ol, dl, table, iframe, h1, h2, h3, h4, h5, h6, .video-container {
 			margin-top: 10px;
 		}
-		ul, ol, dl{
+		ul, ol, dl {
 			margin-left: 20px;
-			ul, ol, dl{
+			ul, ol, dl {
 				margin-top: 0;
 			}
 		}
-		strong{
+		strong {
 			font-weight: bold;
 		}
-		em{
+		em {
 			font-style: italic;
 		}
-		p{
-			margin-top: 10px;	
+		p {
+			margin-top: 10px;
 		}
-		h2{
+		h2 {
 			font-weight: 300;
 			border-bottom: 1px solid $color-gray04;
 			position: relative;
-			&:before{
+			&:before {
 				content: "";
 				position: absolute;
 				bottom: -2px;
@@ -68,48 +68,48 @@ article{
 				width: 100%;
 			}
 		}
-		img, video{
+		img, video {
 			max-width: 100%;
 			height: auto;
 			@extend .basic-alignment;
 		}
-		blockquote{
+		blockquote {
 			background: $color-gray04;
 			border-left: 5px solid $color-gray03;
 			padding: 15px 20px;
 			margin-top: 10px;
-			& > p:first-of-type{
+			& > p:first-of-type {
 				margin-top: 0;
 			}
 		}
-		iframe{
+		iframe {
 			border: none;
 		}
-		table{
+		table {
 			background: $color-gray04;
 			border: 1px solid $color-gray03;
 			border-spacing: 0;
 			margin-top: 10px;
-			th{
+			th {
 				background: $color-gray03;
 				padding: 0 15px;
 			}
-			td{
+			td {
 				text-align: center;
 			}
-			tr{
+			tr {
 				&:nth-of-type(2n){
 					background: #d5d5d5;
 				}
 			}
 		}
-		.caption{
+		.caption {
 			display: block;
 			font-size: 0.9em;
 			color: $color-gray02;
 			padding-left: 25px;
 			position: relative;
-			&:before{
+			&:before {
 				content: "\f040";
 				color: $color-gray03;
 				font: 1.3em $font-icon;
@@ -118,13 +118,13 @@ article{
 				left: 0;
 			}
 		}
-		.video-container{
+		.video-container {
 			position: relative;
 			padding-bottom: 56.25%;
 			padding-top: 30px;
 			height: 0;
 			overflow: hidden;
-			iframe, object, embed{
+			iframe, object, embed {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -135,7 +135,7 @@ article{
 		}
 	}
 }
-.share{
+.share {
 	padding: 15px 0;
 	@include border-shadow();
 }
