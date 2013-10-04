@@ -1,13 +1,7 @@
-#Greyshade
+# Carillon
 
-Greyshade is a minimal, responsive theme for Octopress.
-Starting point forked from [Slash](https://github.com/tommy351/Octopress-Theme-Slash)  
-
-[Demo](http://shashankmehta.in/archive/2012/greyshade.html)
-
-![mobile view](https://dl.dropbox.com/u/6396581/greyshade/1.png)
-
-![Desktop view](https://dl.dropbox.com/u/6396581/greyshade/2.png)
+`Carillon` is a minimal, responsive theme for Octopress [based on Greyshade theme](https://github.com/shashankmehta/greyshade)
+Starting point forked from [Slash](https://github.com/tommy351/Octopress-Theme-Slash)
 
 ##Features
 
