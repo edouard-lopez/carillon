@@ -20,10 +20,9 @@ article {
 	.entry-content {
 		line-height: $lineHeight-default;
 		a {
-		  &:hover {
-		    color: $carillon;
-		    border-bottom: 1px solid $color-gray04;
-		  }
+			@include link-colors($color-gray01, $carillon);
+			@include border-bottom-colors($carillon, $color-gray04);
+			@include transition(0.3s);
 		}
 		.more-link {
 			display: block;
@@ -39,7 +38,7 @@ article {
 			}
 		}
 		p, blockquote, ul, ol, dl, table, iframe, h1, h2, h3, h4, h5, h6, .video-container {
-			margin-top: 10px;
+			margin-top: $block-marginTop;
 		}
 		ul, ol, dl {
 			margin-left: 20px;
@@ -83,7 +82,11 @@ article {
 			}
 		}
 		iframe {
-			border: none;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			@include sweet-frame;
+			padding: 0.1em 0.2em;
 		}
 		table {
 			background: $color-gray04;

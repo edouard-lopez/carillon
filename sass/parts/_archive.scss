@@ -43,7 +43,7 @@
 		}
 		.meta {
 			color: $color-gray02;
-			font-size: 0.9em;
+			font-size: $meta-font-size;
 			line-height: $lineHeight-default;
 			margin-top: 15px;
 			@media screen and (max-width: 600px){

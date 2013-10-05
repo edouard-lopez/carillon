@@ -1,5 +1,6 @@
 .post {
 	h1.title, .entry-content {
+		clear: left;
 		margin-left: 200px;
 		@media screen and (max-width: 800px){
 			margin-left: 0;
@@ -7,15 +8,13 @@
 	}
 	h1.title {
 		a {
-			text-decoration: underline;
+			border-bottom: none;
  		}
 	}
 	.meta {
-		position: absolute;
-		top: 85px;
 		line-height: $lineHeight-default;
-		font-size: 0.9em;
-		color: $color-gray02;
+		font-size: $meta-font-size;
+		color: $meta-color;
 		width: 170px;
 		@media screen and (max-width: 800px){
 			margin-top: 15px;
@@ -23,11 +22,14 @@
 			width: auto;
 		}
 		a {
-			@include link-colors($color-gray02, $color-gray01);
+			@include link-colors($meta-color, $carillon);
 			@include transition(0.3s);
+			border-bottom: none;
 		}
+		$meta-padding: 1em;
 		.date, .tags, .comments {
-			padding-left: 30px;
+			padding-left: $meta-padding * 2;
+			padding-right: $meta-padding / 2;
 			position: relative;
 			&:before {
 				color: $color-gray03;
@@ -38,12 +40,23 @@
 			}
 			@media screen and (max-width: 800px){
 				@include inline-block;
-				margin-right: 30px;
+				margin-right: $meta-padding * 2;
 			}
 		}
-		.date:before {content: "\f073";}
-		.tags:before {content: "\f02c";}
-		.comments:before {content: "\f075";}
+		.date {
+			float: left;
+			&:after {
+				content: ':';
+				padding-left: $meta-padding / 4;
+		  }
+			// &:before {content: "\f073";}
+		}
+		.tags{
+			// &:before {content: "\f02c";}
+		}
+		.comments {
+			// &:before {content: "\f075";}
+		}
 	}
   hr {
 		height: 0;
